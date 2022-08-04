@@ -6,15 +6,13 @@ using TMPro;
 public class BoxScore : MonoBehaviour
 {
     [SerializeField] SpawnTriggerAndJump penguinScript;
-    private TextMeshProUGUI tmp;
+    [SerializeField] TextMeshProUGUI tmp;
 
-    private void Start()
-    {
-        tmp = GetComponent<TextMeshProUGUI>();
-    }
+    private int boxCount = 0;
 
-    private void Update()
+    public void addBoxCount()
     {
-        tmp.text = penguinScript.GetReward().ToString();
+        boxCount++;
+        tmp.text = boxCount.ToString();
     }
 }

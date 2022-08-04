@@ -11,6 +11,7 @@ public class PauseDeathMenu : MonoBehaviour
     public static bool IsPlayerDead = false;
 
     public UnityEvent gamePause;
+    public UnityEvent playerDeathMenu;
 
     // Update is called once per frame
     void Update()

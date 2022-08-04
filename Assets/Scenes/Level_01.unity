@@ -1863,9 +1863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '2
-
-'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1955,6 +1953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   penguinScript: {fileID: 919132147899594985}
+  tmp: {fileID: 922860301}
 --- !u!1 &927858928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4245,6 +4244,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseUi: {fileID: 153684949}
+  gamePause:
+    m_PersistentCalls:
+      m_Calls: []
+  playerDeathMenu:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1974747686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,5 +4730,57 @@ PrefabInstance:
       propertyPath: spawnManager
       value: 
       objectReference: {fileID: 1703852775}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 922860303}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: addBoxCount
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BoxScore, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BoxScore, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296993861738432567, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}
+      propertyPath: boxAdded.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e29c67f2eebc2ff498249cd264c7d976, type: 3}

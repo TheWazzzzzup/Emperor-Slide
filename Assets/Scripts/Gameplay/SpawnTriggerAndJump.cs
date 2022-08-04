@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpawnTriggerAndJump : MonoBehaviour
 {
-    
-    
+
+    public UnityEvent boxAdded;
+
     public GameObject DeathUi;//
     // SpawnRelated
     public SpawnManager spawnManager;//
@@ -68,9 +70,7 @@ public class SpawnTriggerAndJump : MonoBehaviour
                 OutOfBoundSeq();
                 break;
             case "Reward":
-                AddReward();
-                Debug.Log(GetReward());
-                //GetParent = other.gameObject.GetComponentInParent<GameObject>();
+                boxAdded.Invoke();
                 Destroy(other.transform.parent.gameObject);
                 break;
             default:

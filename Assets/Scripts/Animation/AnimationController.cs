@@ -14,6 +14,7 @@ public class AnimationController : MonoBehaviour
     {
         playerController = player.GetComponent<PlayerController>();
         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
