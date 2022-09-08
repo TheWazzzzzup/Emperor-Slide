@@ -7,6 +7,7 @@ public class SpawnTriggerAndJump : MonoBehaviour
 {
 
     public UnityEvent boxAdded;
+    public UnityEvent playerDied;
 
     public GameObject DeathUi;//
     // SpawnRelated
@@ -49,14 +50,14 @@ public class SpawnTriggerAndJump : MonoBehaviour
         }
         if (hp <= 0f)
         {
-            DeathSequence();
+            playerDied.Invoke();
         }
     }
-    void DeathSequence()
-    {
-        PauseDeathMenu.IsPlayerDead = true;
-        DeathUi.SetActive(true);
-    }
+    //void DeathSequence()
+    //{
+    //    PauseDeathMenu.IsPlayerDead = true;
+    //    DeathUi.SetActive(true);
+    //}
     private void OutOfBoundSeq()
     {
         PauseDeathMenu.Restart();
@@ -98,7 +99,7 @@ public class SpawnTriggerAndJump : MonoBehaviour
         if (hp <= 0)
         {
             hp = 0;
-            DeathSequence();
+            playerDied.Invoke();
         }
         else
         {

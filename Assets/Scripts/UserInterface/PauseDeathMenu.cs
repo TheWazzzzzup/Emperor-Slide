@@ -54,6 +54,12 @@ public class PauseDeathMenu : MonoBehaviour
         SpawnTriggerAndJump.hp = 100f;
         Debug.Log($"restart called {SpawnTriggerAndJump.hp} and playerdead = {IsPlayerDead}");
     }
+
+    public void SetPlayerDead()
+    {
+        IsPlayerDead = true;
+    }
+
     public void Resume()
     {
         PauseUi.SetActive(false);
